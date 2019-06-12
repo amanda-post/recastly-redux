@@ -12,3 +12,7 @@ import exampleVideoData from '../data/exampleVideoData.js';
 //         applyMiddleware(thunk)
 //     );
 // }
+
+var store = createStore(rootReducer,({videoList:[], currentVideo: null}) , applyMiddleware(thunk));
+
+export default store;

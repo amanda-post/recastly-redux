@@ -8,8 +8,8 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      videos: [],
-      currentVideo: null
+      // videos: [],
+      // currentVideo: null
     };
 
     this.getYouTubeVideos = this.getYouTubeVideos.bind(this);
