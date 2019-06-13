@@ -2,7 +2,7 @@ import React from 'react';
 
 var VideoPlayer = ({video}) => (
   !video
-    ? <div className="video-player">Please wait...</div>
+    ? <div className="video-player">Type something into the search bar! :)</div>
     : <div className="video-player">
       <div className="embed-responsive embed-responsive-16by9">
         <iframe className="embed-responsive-item" src={`https://www.youtube.com/embed/${video.id.videoId}`} allowFullScreen></iframe>
