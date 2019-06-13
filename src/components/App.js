@@ -3,15 +3,10 @@ import VideoPlayerContainer from '../containers/VideoPlayerContainer.js';
 import SearchContainer from '../containers/SearchContainer.js';
 import VideoListContainer from '../containers/VideoListContainer.js';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
 
-  }
+var App = (props) => (
   //TODO: swap out the React components below for the container components
   //  you wrote in the 'containers' directory.
-  render() {
-    return (
       <div>
         <nav className="navbar">
           <div className="col-md-6 col-md-offset-3">
@@ -28,7 +23,8 @@ class App extends React.Component {
         </div>
       </div>
     );
-  }
-}
+  
+
+
 
 export default App;

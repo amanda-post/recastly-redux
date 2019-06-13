@@ -15,6 +15,9 @@ class Search extends React.Component {
     this.setState({
       value: e.target.value
     });
+  }
+
+  handleSubmit() {
     this.props.handleSearchInputChange(this.state.value);
   }
 
@@ -27,7 +30,7 @@ class Search extends React.Component {
           value={this.state.value}
           onChange={this.handleInputChange.bind(this)}
         />
-        <button className="btn hidden-sm-down">
+        <button onClick={this.handleSubmit.bind(this)} className="btn hidden-sm-down">
           <span className="glyphicon glyphicon-search"></span>
         </button>
       </div>
